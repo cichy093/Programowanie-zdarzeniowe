@@ -1,0 +1,9 @@
+twix\database\QTwixWyniki.class
+twix\database\QTwixKlienci.class
+twix\database\QTwixSLAmunicji.class
+twix\database\QTwixRezerwacjaBroni.class
+twix\database\QTwixRezerwacja.class
+twix\database\QTwixSLTorow.class
+twix\database\QTwixSLBroni.class
+twix\database\QTwixSLRangi.class
+twix\database\QTwixBronAmunicja.class
