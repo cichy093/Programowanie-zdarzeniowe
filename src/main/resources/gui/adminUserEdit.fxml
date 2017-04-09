@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.AdminEditUserScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background_ZmienDane.jpg" />
+         </image></ImageView>
+      <TextField fx:id="inputSearchPesel" layoutX="44.0" layoutY="58.0" />
+      <Label layoutX="86.0" layoutY="41.0" text="podaj pesel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="buttonSzukaj" layoutX="84.0" layoutY="95.0" mnemonicParsing="false" onAction="#szukaj" text="Wyszukaj" />
+      <GridPane layoutX="44.0" layoutY="157.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="122.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="78.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="inputDowod" GridPane.rowIndex="3" />
+            <TextField fx:id="inputLogin" GridPane.rowIndex="4" />
+            <TextField fx:id="inputHaslo" GridPane.rowIndex="5" />
+            <TextField fx:id="inputRanga" GridPane.rowIndex="6" />
+            <TextField fx:id="inputImie" />
+            <TextField fx:id="inputNazwisko" GridPane.rowIndex="1" />
+            <TextField fx:id="inputPesel" GridPane.rowIndex="2" />
+            <Label text="imię" GridPane.columnIndex="1" />
+            <Label text="nazwisko" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="pesel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="nr dowodu" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="login" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="hasło" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="ranga" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <CheckBox fx:id="inputAdmin" mnemonicParsing="false" text="admin" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+            <Button mnemonicParsing="false" onAction="#zapisz" prefHeight="25.0" prefWidth="86.0" text="Zapisz" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <Button layoutX="93.0" layoutY="492.0" mnemonicParsing="false" onAction="#gotoAdminPanelScreen" text="Cofnij" />
+   </children>
+</AnchorPane>

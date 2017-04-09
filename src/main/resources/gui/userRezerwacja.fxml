@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.UserRezerwacjaScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/zarezerwuj_background.jpg" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="datepicker" layoutX="516.0" layoutY="50.0" onAction="#dateSelected" />
+      <ComboBox fx:id="inputTor" layoutX="529.0" layoutY="106.0" onAction="#torSelected" prefWidth="150.0" />
+      <Label layoutX="587.0" layoutY="21.0" text="termin" />
+      <Label layoutX="596.0" layoutY="83.0" text="tor" />
+      <ComboBox fx:id="inputCzas" layoutX="529.0" layoutY="164.0" onAction="#czasSelected" prefWidth="150.0" />
+      <Label layoutX="593.0" layoutY="139.0" text="czas" />
+      <Button layoutX="572.0" layoutY="206.0" mnemonicParsing="false" onAction="#rezerwuj" text="Rezerwuj" />
+      <Button layoutX="107.0" layoutY="480.0" mnemonicParsing="false" onAction="#gotoUserMainScreen" text="cofnij" />
+   </children>
+</AnchorPane>

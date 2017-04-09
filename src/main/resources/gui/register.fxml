@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.RegisterScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Rejestracja_background.jpg" />
+         </image></ImageView>
+      <GridPane layoutX="108.0" layoutY="121.0" prefHeight="550.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="inputImie" onKeyReleased="#validateImie" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputNazwisko" onKeyReleased="#validateNazwisko" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputPesel" onKeyReleased="#validatePesel" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="80.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputDowod" onKeyReleased="#validateDowod" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="110.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputLogin" onKeyReleased="#validateLogin" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="140.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputHaslo" onKeyReleased="#validateHaslo" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="170.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="inputPowtorzHaslo" onKeyReleased="#validatePowtorzHaslo" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="200.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="imię" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label layoutX="126.0" layoutY="30.0" text="nazwisko" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="pesel" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="powtórz hasło" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="200.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="hasło" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="170.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="login" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="140.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="nr dowodu" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets top="110.0" />
+               </GridPane.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="150.0" text="Zarejestruj" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="240.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#gotoMainScreen" prefHeight="25.0" prefWidth="150.0" text="Cofnij" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="50.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

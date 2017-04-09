@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.UserCostsScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Kalkulator_kosztow_background.jpg" />
+         </image></ImageView>
+      <Button layoutX="536.0" layoutY="192.0" mnemonicParsing="false" onAction="#oblicz" text="Oblicz" />
+      <Label fx:id="labelCena" layoutX="523.0" layoutY="256.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label layoutX="548.0" layoutY="43.0" text="Broń" />
+      <Label layoutX="532.0" layoutY="128.0" text="Ilość naboi" />
+      <TextField fx:id="inputIloscNaboi" layoutX="486.0" layoutY="151.0" />
+      <Button layoutX="34.0" layoutY="494.0" mnemonicParsing="false" onAction="#gotoUserMainScreen" text="Cofnij" />
+      <ComboBox fx:id="comboBoxBron" layoutX="486.0" layoutY="75.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
