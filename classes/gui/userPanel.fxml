@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.UserMainScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Panel_uzytkownika_background.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="260.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/soldier_tag.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="41.0" layoutY="477.0" mnemonicParsing="false" onAction="#gotoMainScreen" text="Wyloguj" />
+      <Button layoutX="518.0" layoutY="179.0" mnemonicParsing="false" onAction="#gotoUserStats" text="Moje statystyki" />
+      <Button layoutX="537.0" layoutY="233.0" mnemonicParsing="false" onAction="#gotoRanking" text="Ranking" />
+      <Button layoutX="507.0" layoutY="293.0" mnemonicParsing="false" onAction="#gotoRezerwacjaTerminu" text="Rezerwacja terminu" />
+      <Button layoutX="464.0" layoutY="405.0" mnemonicParsing="false" onAction="#gotoObliczKoszty" text="Oblicz koszty" />
+      <ListView fx:id="listViewRezerwacje" layoutX="424.0" layoutY="33.0" prefHeight="124.0" prefWidth="172.0" />
+      <Label layoutX="481.0" layoutY="10.0" text="Rezerwacje" textFill="WHITE" />
+      <GridPane layoutX="272.0" layoutY="231.0" prefHeight="91.0" prefWidth="180.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="76.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="104.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" prefHeight="67.0" prefWidth="130.0" text="login:" textAlignment="RIGHT">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_RIGHT" prefHeight="108.0" prefWidth="170.0" text="ranga:" textAlignment="RIGHT" GridPane.rowIndex="1">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelLogin" alignment="BOTTOM_LEFT" prefHeight="103.0" prefWidth="183.0" text="Label" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRanga" alignment="TOP_LEFT" prefHeight="112.0" prefWidth="184.0" text="Supreme Master First Class" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

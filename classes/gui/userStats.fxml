@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twix.gui.UserStatsScreen">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ranking_background.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listViewLast" layoutX="32.0" layoutY="60.0" prefHeight="378.0" prefWidth="138.0" />
+      <Button layoutX="634.0" layoutY="496.0" mnemonicParsing="false" onAction="#gotoUserMainScreen" text="Cofnij" />
+      <ListView fx:id="listViewBest" layoutX="176.0" layoutY="60.0" prefHeight="378.0" prefWidth="138.0" />
+      <Label alignment="CENTER" layoutX="206.0" layoutY="12.0" prefHeight="39.0" prefWidth="79.0" text="Najlepsze" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="67.0" layoutY="12.0" prefHeight="39.0" prefWidth="69.0" text="Ostatnie" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
